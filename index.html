@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>Objects Questions
+
+        <b>Ques: Create a Function.</b>
+                    Ans:-function Check(obj1){
+                        obj1.setter = function () {
+                                console.log(this.name);
+                            };
+                }
+                    
+                 <b>Ques: Delete a Parameter.</b>
+                    Ans:-function Check(obj1) {
+                        return delete obj1.rollno;  
+                     }
+                    
+                <b>Ques: Check whether the Package is Dream Package or not.</b>
+                    Ans:-function Check(obj1) {
+                        if(obj1.salary>500000){
+                        return ("Dream");
+                      }
+                      else{
+                        return ("NotDream");
+                      }
+                  }
+                    
+                <b>Ques: Check whether the Object has a parameter or not.</b>
+                    Ans:-function Check(obj1) {
+                        let a = Object.keys(obj1);
+                       if(a.length == 0){
+                       return false;
+                       }
+                       else{
+                         return true;
+                       } 
+                   }
+                   
+        
+                <b>Ques: Merge the Objects.</b>
+                    Ans:-function Check(obj1,obj2) {
+                        let obj3 = Object.assign(obj1,obj2);
+                       return obj3;
+                   }
+        
+                <b>Ques: Object Multiplyer.</b>
+                    Ans:-function Check(a,obj1) {
+                        obj1.id = obj1.id*a;
+                         obj1.houseno = obj1.houseno*a;
+                         return(obj1);
+                     
+        
+                <b>Ques: Find the  sum of Object Members.</b>
+                    Ans:-function Check(obj1) {
+                        let sum = (obj1.p1 + obj1.p2 + obj1.p3);
+                              return (sum);  
+                      }
+        
+                <b>Ques: Check whether the Objects are same or not.</b>
+                    Ans:-function check(obj1,a,b) {
+                        if (obj1.name==a && obj1.id==b){
+                           return true;
+                         }else{
+                           return false;
+                         }  
+                 }</pre>
+</body>
+</html>
